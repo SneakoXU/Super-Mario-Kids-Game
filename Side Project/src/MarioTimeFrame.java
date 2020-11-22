@@ -216,48 +216,8 @@ public class MarioTimeFrame extends JFrame {
 	    }
 
 		private void computer(int playerMove){
-	        int computerMove = random.nextInt(3);
 
-	    if(computerMove == playerMove){
-	        if(computerMove == 0) {
-	            results.append("Computer selects ROCK\nResult: TIE!\n-------\n");
-	        }
-	        else if(computerMove == 1) {
-	            results.append("Computer selects PAPER\nResult: TIE!\n-------\n");
-	        }
-	        else{
-	            results.append("Computer selects SCISSORS\nResult: TIE!\n-------\n");
-	        }
-	        tiesTally++;
-	        ties.setText("WORLD 1-1");
-	        //ties.setText("Ties: " + tiesTally);
-	    }
-	    else if (computerMove == 0 && playerMove == 1){
-	        results.append("Computer selects ROCK\nResult: YOU WIN!\n-------\n");
-	        playerWinTally++;
-	    }
-	    else if (computerMove == 0 && playerMove == 2){
-	        results.append("Computer selects ROCK\nResult: WOMP, WOMP! YOU LOSE!\n-------\n");
-	        computerWinTally++;
-	    }
-	    else if (computerMove == 1 && playerMove == 0){
-	        results.append("Computer selects PAPER\nResult: WOMP, WOMP! YOU LOSE!\n-------\n");
-	        computerWinTally++;
-	    }
-	    else if (computerMove == 1 && playerMove == 2){
-	        results.append("Computer selects PAPER\nResult: YOU WIN!\n-------\n");
-	        playerWinTally++;
-	    }
-	    else if (computerMove == 2 && playerMove == 0){
-	        results.append("Computer selects SCISSORS\nResult: YOU WIN!\n-------\n");
-	        playerWinTally++;
-	    }
-	    else if (computerMove == 2 && playerMove == 1){
-	        results.append("Computer selects SCISSORS\nResult: WOMP, WOMP! YOU LOSE!\n-------\n");
-	        computerWinTally++;
-	    }
-//	    playerWins.setText("Player wins: " + playerWinTally);
-//	    computerWins.setText("Computer wins: " + computerWinTally);
+
 	    playerWins.setText("Mario x" + playerWinTally);
 	    computerWins.setText("000000");
 	    }
@@ -266,8 +226,7 @@ public class MarioTimeFrame extends JFrame {
 			 Map<String, String> mapQuestions = new HashMap<>();
 			 mapQuestions.put("-- Penguin incoming! Select a power-up to freeze it.", "Ice Flower");
 			 
-		       // questions.setQuestions(mapQuestions);
-		        //questions.add("Look there's a pipe! OH NO! There is a piranha in it!");
+		       
 		     return mapQuestions;  
 		 }
 	
